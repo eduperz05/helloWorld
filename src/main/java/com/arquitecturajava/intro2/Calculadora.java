@@ -19,4 +19,14 @@ public class Calculadora {
         }
         return mayor;
     }
+
+    public double menor( double[] lista ) {
+        double menor=Integer.MAX_VALUE;
+        for (double v : lista) {
+            if (menor > v) {
+                menor = v;
+            }
+        }
+        return menor;
+    }
 }

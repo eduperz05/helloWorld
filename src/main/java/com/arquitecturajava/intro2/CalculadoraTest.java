@@ -10,7 +10,7 @@ public class CalculadoraTest {
         Calculadora calculadora = new Calculadora();
         double resultadoCalculadora = calculadora.sumar(2,2);
 
-        //assserts
+        //asserts
 
         assertEquals(4, resultadoCalculadora, 0.1);
     }
@@ -31,5 +31,14 @@ public class CalculadoraTest {
         double resultadoCalculadora = calculadora.mayor(listaNumeros);
 
         assertEquals(7, resultadoCalculadora, 0);
+    }
+
+    @Test
+    public void numeroMenor() {
+        double[] listaNumeros = {3,6,2,6,2,1,7};
+        Calculadora calculadora = new Calculadora();
+        double resultadoCalculadora = calculadora.menor(listaNumeros);
+
+        assertEquals(1, resultadoCalculadora, 0);
     }
 }
