@@ -14,20 +14,7 @@ public class sumatorio {
         }
         this.resultant = acc;
     }
-
-    public int[] getNum() {
-        return num;
-    }
-
-    public void setNum(int[] num) {
-        this.num = num;
-    }
-
     public int getResultant() {
         return resultant;
-    }
-
-    public void setResultant(int resultant) {
-        this.resultant = resultant;
     }
 }
